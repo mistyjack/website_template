@@ -2,8 +2,8 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        App: path.join('app', 'assets', 'scripts', 'App.js'),
-        Vendor: path.join('app', 'assets', 'scripts', 'Vendor.js')
+        App: path.join(__dirname, 'app', 'assets', 'scripts', 'App.js'),
+        Vendor: path.join(__dirname, 'app', 'assets', 'scripts', 'Vendor.js')
     },
 
     output: {
@@ -22,7 +22,9 @@ module.exports = {
             }
 
         ]
-    }
+    },
+
+    mode: "development"
 }
 
 
